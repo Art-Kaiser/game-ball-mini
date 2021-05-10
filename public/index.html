@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://game-ball-4c061.firebaseapp.com/styles.css">
+    <link rel="shortcut icon" href="https://game-ball-4c061.firebaseapp.com/favicon.ico" type="image/x-icon">
+    <title>Game Ball</title>
+</head>
+<body>
+
+    <div>
+        <div>
+            <span>Время: <span id="timer">60</span></span>
+            <hr>
+        </div>
+       <div> 
+            <audio id="audio" loop autoplay muted>
+                <source src="https://game-ball-4c061.firebaseapp.com/audio/gameSound.ogg" type="audio/ogg">
+                <source src="https://game-ball-4c061.firebaseapp.com/audio/gameSound.mp3" type="audio/mpeg">
+            </audio>
+            <button id="audio_button" class="button"><img id="img_audio" src="https://game-ball-4c061.firebaseapp.com/images/volume.svg"></button>
+        </div>
+        <div class="record">
+            <span>Рекорд очков: <span id="record_id"> 0</span></span> /
+            <span>Лопнуто: <span id="record_id_ball">0</span></span>
+        </div>
+    </div>
+<div class="wrapper">
+    <canvas id="game" width="600" height="600"></canvas>
+    <div>
+        <div>
+            <img class="ballInfo" src="https://game-ball-4c061.firebaseapp.com/images/ball.png" alt="">
+            <span>: +50 очков</span> 
+        </div>
+        <div>
+            <img class="ballInfo" src="https://game-ball-4c061.firebaseapp.com/images/redBall.png" alt="">
+            <span>: +100 очков</span>
+        </div>
+        <div>
+            <img class="ballInfo" src="https://game-ball-4c061.firebaseapp.com/images/greenBall.png" alt="">
+            <span>: +150 очков</span>
+        </div>
+        <div>
+            <img class="ballInfo" src="https://game-ball-4c061.firebaseapp.com/images/blueBall.png" alt="">
+            <span>: +200 очков</span>
+        </div>
+        <div>
+            <img class="ballInfo" src="https://game-ball-4c061.firebaseapp.com/images/purpleBall.png" alt="">
+            <span>: +300 очков</span>
+        </div>
+        <div>
+            <img class="ballInfo" src="https://game-ball-4c061.firebaseapp.com/images/x2.png" alt="">
+            <span>: x2. Удваиваются получаемые очки.</span>
+        </div>
+        <div>
+            <img class="ballInfo" src="https://game-ball-4c061.firebaseapp.com/images/min.png" alt="">
+            <span>: -10000 очков</span>
+        </div>
+    </div>
+</div>
+<script src="https://game-ball-4c061.firebaseapp.com/index.js"></script>
+</body>
+</html>
